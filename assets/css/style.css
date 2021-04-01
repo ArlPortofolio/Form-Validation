@@ -1,0 +1,48 @@
+body {
+	font-family: sans-serif;
+	background-image: url(/assets/img/background-image.jpg);
+	background-size: cover;
+}
+
+.main {
+	max-width: 600px;
+	padding: 10% 0 0;
+	margin: auto;
+}
+
+.form {
+	position: relative;
+	max-width: 600px;
+	background-color: rgb(33, 34, 34);
+	margin: 0 auto 100px;
+
+	padding: 55px 145px 45px;
+	border-radius: 25px;
+}
+
+.input-container {
+	margin-bottom: 15px;
+	max-width: 300px;
+}
+
+.input-container[data-error] .input {
+	border-color: #c92432;
+	color: #c92432;
+	background: #fffafa;
+}
+
+.input-container[data-error]::after {
+	content: attr(data-error);
+	font-size: 0.85em;
+	color: #c92432;
+	display: block;
+	margin: 10px 0;
+}
+
+.input {
+	display: block;
+	width: 100%;
+	padding: 12px;
+	border-radius: 4px;
+	border: 1px solid #dddddd;
+}
